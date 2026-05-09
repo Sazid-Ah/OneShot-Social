@@ -1,0 +1,147 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+a{
+  text-decoration: none;
+} 
+
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+  line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: rgba(15, 23, 42, 0.95);
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #38bdf8;
+}
+
+.nav-btn {
+  background: #38bdf8;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* PRIVACY SECTION */
+.privacy {
+  padding: 100px 8%;
+  background: linear-gradient(135deg, #0b1220, #111827);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.tag {
+  background: rgba(56,189,248,0.15);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 20px 0;
+}
+
+.updated {
+  color: #94a3b8;
+  margin-bottom: 40px;
+}
+
+/* CARDS */
+.card {
+  background: #111827;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #38bdf8;
+  transform: translateY(-5px);
+}
+
+.card h2 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #0f172a;
+  color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 8%;
+    background: #111827;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
